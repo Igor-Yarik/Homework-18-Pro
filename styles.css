@@ -1,0 +1,77 @@
+body {
+    background-image: url('./images/bg_image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main_button {
+    padding: 50px 150px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 0 0 10px black;
+    background: linear-gradient(0deg, rgba(0, 65, 255, 1) 0%, rgba(249, 254, 43, 1) 100%);
+    box-shadow: 0 0 100px 50px rgba(249, 254, 43, 1), inset 0 0 10px 10px rgba(249, 254, 43, 1);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.main_button:hover {
+    box-shadow: 0 0 100px 50px rgba(0, 65, 255, 1), inset 0 0 10px 10px rgba(0, 65, 255, 1);
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.modal_window {
+    display: none;
+    padding: 30px 100px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 0 0 10px black;
+    background: linear-gradient(0deg, rgba(0, 65, 255, 1) 0%, rgba(249, 254, 43, 1) 100%);
+    box-shadow: 0 0 100px 50px rgba(249, 254, 43, 1), inset 0 0 10px 10px rgba(249, 254, 43, 1);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+#modal_background {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+#close_button {
+    padding: 10px 50px;
+    font-size: 16px;
+    color: yellow;
+    background-color: rgba(0, 65, 255, 0.1);
+    box-shadow: 0 0 10px 1px rgba(249, 254, 43, 1), inset 0 0 10px 1px rgba(249, 254, 43, 1);
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+}
+
+#close_button:hover {
+    color: blue;
+    background-color: rgba(249, 254, 43, 1);
+    box-shadow: 0 0 10px 1px rgba(0, 65, 255, 1), inset 0 0 10px 1px rgba(0, 65, 255, 1);
+    transition: all 0.5s;
+}
